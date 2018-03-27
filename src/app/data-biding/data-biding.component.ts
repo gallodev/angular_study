@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-data-biding',
@@ -10,6 +10,9 @@ export class DataBidingComponent implements OnInit {
   url : string = "www.google.com.br";
   urlImage = 'http://lorempixel.com/400/200/sports/';
   mouseOver : boolean = false;
+  valorInicial = 15;
+
+  @ViewChild('nome') nome : HTMLElement; 
 
   getValor(){
     return 1;

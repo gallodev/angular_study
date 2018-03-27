@@ -4,13 +4,13 @@ import { AppComponent } from './app.component';
 import { CursosModule } from './cursos/cursos.module';
 import { CursosService } from './cursos/cursos.service';
 import { DataBidingComponent } from './data-biding/data-biding.component';
-import { TesteComponent } from './teste/teste.component';
+import { OutputpropertyComponent } from './outputproperty/outputproperty.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBidingComponent,
-    TesteComponent    
+    OutputpropertyComponent    
   ],
   imports: [
     BrowserModule,
