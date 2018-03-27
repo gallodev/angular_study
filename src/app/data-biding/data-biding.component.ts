@@ -14,6 +14,10 @@ export class DataBidingComponent implements OnInit {
 
   @ViewChild('nome') nome : HTMLElement; 
 
+  onMudaValor(evento){
+    console.log(evento.novoValor);
+  }
+
   getValor(){
     return 1;
   }

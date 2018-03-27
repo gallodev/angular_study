@@ -42,7 +42,9 @@
     (mouseout)="onMouseOut()"
     [class.highlight]="isMouseOver"
  > Passe o mouse aqui mizeravi</p>
-<app-outputproperty [valor]="valorInicial"></app-outputproperty>
+<app-outputproperty [valor]="valorInicial"
+(mudaValor)="onMudaValor($event)"
+></app-outputproperty>
   
 
 </section>

@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input,EventEmitter,Output } from '@angular/core';
 
 @Component({
   selector: 'app-outputproperty',
@@ -8,13 +8,16 @@ import { Component, OnInit,Input } from '@angular/core';
 export class OutputpropertyComponent implements OnInit {
 
   @Input("valor") valor:number;
+  @Output() mudaValor = new EventEmitter();
 
   incrementa(){
     this.valor++;
+    this.mudaValor.emit({novoValor:this.valor});
   }
 
   decrementa(){
     this.valor--;
+    this.mudaValor.emit({novoValor:this.valor});
   }
 
   constructor() { }
