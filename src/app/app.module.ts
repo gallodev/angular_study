@@ -5,12 +5,16 @@ import { CursosModule } from './cursos/cursos.module';
 import { CursosService } from './cursos/cursos.service';
 import { DataBidingComponent } from './data-biding/data-biding.component';
 import { OutputpropertyComponent } from './outputproperty/outputproperty.component';
+import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBidingComponent,
-    OutputpropertyComponent    
+    OutputpropertyComponent,
+    DiretivaNgifComponent,
+    HighlightMouseDirective    
   ],
   imports: [
     BrowserModule,

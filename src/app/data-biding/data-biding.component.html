@@ -40,11 +40,16 @@
 <input type="text" (keyup)="onKeyUp($event)">
 <p (mouseover)="onMouseOut()" 
     (mouseout)="onMouseOut()"
-    [class.highlight]="isMouseOver"
+    [class.highlight]="mouseOver"
  > Passe o mouse aqui mizeravi</p>
 <app-outputproperty [valor]="valorInicial"
 (mudaValor)="onMudaValor($event)"
 ></app-outputproperty>
+
+<app-diretiva-ngif></app-diretiva-ngif>
+
+
+<p HighlightMouse> meu Texto com hightlight mouse </p>
   
 
 </section>
